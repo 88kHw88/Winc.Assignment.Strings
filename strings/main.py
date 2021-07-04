@@ -29,7 +29,8 @@ print(last_name_len)
 name_short = player[0:1] + "." + player[player.find(" "):len(player)]
 print(name_short)
 
-chant = (first_name + "!" + player[player.find(" "):8]) * len(first_name)
+chant = (first_name + "!" + player[player.find(" ", 0):player.find("M",0)]) * len(first_name)
+
 print(chant)
 
-print(" " != player[player.find(" "):8])
+print(" " != player[player.find(" ", 0):player.find("M",0)])
